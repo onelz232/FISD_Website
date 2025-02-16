@@ -1,0 +1,105 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto Mono';
+    background: #f5f2f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin: 30px 0 15px;
+    color: #333;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Layout Containers */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Responsive Card Columns */
+.column {
+    flex: 1 1 calc(18% - 15px); /* Ensure proper spacing */
+    max-width: 15%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Card Styling */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.container {
+    padding: 10px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #444;
+}
+
+/* Titles */
+.title {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.title2 {
+    color: #ba982f;
+    text-shadow: #f1c232 0px 0px 1px, #f1c232 0px 0px 1px, #f1c232 0px 0px 1px;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
